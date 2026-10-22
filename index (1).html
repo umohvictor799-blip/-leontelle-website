@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Leontelle Lady Guide | A Guide to Executive Femininity</title>
+  <meta name="description" content="A guide to executive femininity. Master quiet allure, personal magnetism, and sovereign poise.">
+  
+  <!-- Google Fonts: Cormorant Garamond & Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================
+       GLASSMORPHISM & EDITORIAL BRAND PALETTE
+    ========================================================== */
+    :root {
+      --burgundy-primary: #5A0E23;
+      --burgundy-dark: #380715;
+      --burgundy-light: #7E1A35;
+      --gold-accent: #C5A059;
+      --gold-soft: rgba(197, 160, 89, 0.15);
+      
+      /* Glassmorphism Variables */
+      --glass-bg: rgba(255, 255, 255, 0.58);
+      --glass-bg-subtle: rgba(255, 255, 255, 0.38);
+      --glass-border: rgba(255, 255, 255, 0.75);
+      --glass-border-gold: rgba(197, 160, 89, 0.35);
+      --glass-shadow: 0 20px 45px -12px rgba(58, 14, 25, 0.08), 
+                      inset 0 1px 1px 0 rgba(255, 255, 255, 0.85);
+      --glass-blur: blur(20px);
+      
+      --text-dark: #2A2423;
+      --text-muted: #5F5654;
+      --font-serif: 'Cormorant Garamond', Georgia, serif;
+      --font-sans: 'Montserrat', sans-serif;
+      --container-width: 1140px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #FAF5EE;
+      color: var(--text-dark);
+      font-family: var(--font-sans);
+      font-size: 16px;
+      line-height: 1.85;
+      letter-spacing: 0.2px;
+      -webkit-font-smoothing: antialiased;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    /* Ambient Luxury Gradient Spheres */
+    .ambient-glow {
+      position: fixed;
+      border-radius: 50%;
+      filter: blur(100px);
+      z-index: -1;
+      pointer-events: none;
+      opacity: 0.45;
+    }
+    .glow-1 {
+      top: -100px;
+      right: -100px;
+      width: 550px;
+      height: 550px;
+      background: radial-gradient(circle, #EED5CA 0%, rgba(238, 213, 202, 0) 70%);
+    }
+    .glow-2 {
+      top: 35%;
+      left: -120px;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, #EBDCC6 0%, rgba(235, 220, 198, 0) 70%);
+    }
+    .glow-3 {
+      bottom: 10%;
+      right: -80px;
+      width: 650px;
+      height: 650px;
+      background: radial-gradient(circle, #E5C3CE 0%, rgba(229, 195, 206, 0) 70%);
+    }
+
+    /* Burgundy Classy Headings */
+    h1, h2, h3, h4 {
+      font-family: var(--font-serif);
+      color: var(--burgundy-primary);
+      font-weight: 600;
+      line-height: 1.2;
+    }
+
+    .subheading {
+      color: var(--burgundy-light);
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: 1.35rem;
+      margin-bottom: 1.2rem;
+    }
+
+    p {
+      margin-bottom: 1.6rem;
+      color: var(--text-dark);
+      font-weight: 300;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .container {
+      width: 90%;
+      max-width: var(--container-width);
+      margin: 0 auto;
+    }
+
+    .narrow-container {
+      width: 90%;
+      max-width: 820px;
+      margin: 0 auto;
+    }
+
+    .divider {
+      width: 60px;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--gold-accent), transparent);
+      margin: 24px auto;
+    }
+
+    /* Glass Panels */
+    .glass-card {
+      background: var(--glass-bg);
+      backdrop-filter: var(--glass-blur);
+      -webkit-backdrop-filter: var(--glass-blur);
+      border: 1px solid var(--glass-border);
+      box-shadow: var(--glass-shadow);
+      border-radius: 16px;
+    }
+
+    /* Buttons */
+    .btn-selar {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--burgundy-primary) 0%, var(--burgundy-dark) 100%);
+      color: #FAF7F2;
+      font-family: var(--font-sans);
+      font-size: 0.82rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 2.2px;
+      padding: 18px 44px;
+      border: 1px solid var(--glass-border-gold);
+      border-radius: 30px;
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: 0 12px 28px rgba(56, 7, 21, 0.25);
+      cursor: pointer;
+    }
+
+    .btn-selar:hover {
+      background: linear-gradient(135deg, var(--burgundy-light) 0%, var(--burgundy-primary) 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 18px 36px rgba(56, 7, 21, 0.35);
+      color: #FFFFFF;
+    }
+
+    /* Floating Frosted Navigation */
+    header {
+      position: sticky;
+      top: 18px;
+      z-index: 100;
+      padding: 0 20px;
+    }
+
+    .nav-glass-bar {
+      max-width: var(--container-width);
+      margin: 0 auto;
+      padding: 16px 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.65);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border: 1px solid rgba(255, 255, 255, 0.85);
+      box-shadow: 0 10px 30px rgba(56, 7, 21, 0.05);
+      border-radius: 50px;
+    }
+
+    .brand-logo {
+      font-family: var(--font-serif);
+      font-size: 1.45rem;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--burgundy-primary);
+    }
+
+    .nav-cta {
+      font-size: 0.75rem;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: var(--burgundy-primary);
+      padding: 8px 18px;
+      border-radius: 20px;
+      background: rgba(197, 160, 89, 0.12);
+      border: 1px solid var(--glass-border-gold);
+      transition: all 0.3s;
+    }
+
+    .nav-cta:hover {
+      background: var(--burgundy-primary);
+      color: #FFFFFF;
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 80px 0 100px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.15fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .book-glass-pedestal {
+      padding: 24px;
+      border-radius: 20px;
+      background: var(--glass-bg);
+      backdrop-filter: var(--glass-blur);
+      -webkit-backdrop-filter: var(--glass-blur);
+      border: 1px solid var(--glass-border);
+      box-shadow: 0 25px 60px -15px rgba(56, 7, 21, 0.18),
+                  inset 0 1px 2px rgba(255, 255, 255, 0.95);
+      max-width: 440px;
+      margin: 0 auto;
+    }
+
+    .book-glass-pedestal img {
+      border-radius: 8px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+    }
+
+    .hero-eyebrow {
+      font-size: 0.8rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--gold-accent);
+      font-weight: 600;
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    .hero h1 {
+      font-size: 3.6rem;
+      margin-bottom: 12px;
+      line-height: 1.12;
+    }
+
+    .meta-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(10px);
+      color: var(--burgundy-dark);
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 7px 18px;
+      border-radius: 30px;
+      border: 1px solid var(--glass-border);
+      margin-bottom: 25px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    }
+
+    /* Story Section */
+    .story-section {
+      padding: 100px 0;
+      position: relative;
+    }
+
+    .story-glass-wrapper {
+      padding: 55px;
+      border-radius: 24px;
+    }
+
+    .story-header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .story-header h2 {
+      font-size: 2.8rem;
+      margin-bottom: 8px;
+    }
+
+    .story-content-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 55px;
+      align-items: start;
+    }
+
+    .story-glass-frame {
+      padding: 14px;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.5);
+      border: 1px solid var(--glass-border);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.06);
+    }
+
+    .story-glass-frame img {
+      width: 100%;
+      height: 620px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+    .dropcap {
+      float: left;
+      font-family: var(--font-serif);
+      font-size: 4.2rem;
+      line-height: 0.8;
+      padding-top: 4px;
+      padding-right: 14px;
+      color: var(--burgundy-primary);
+      font-weight: 600;
+    }
+
+    .story-highlight {
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: 1.35rem;
+      color: var(--burgundy-primary);
+      border-left: 2px solid var(--gold-accent);
+      padding: 10px 0 10px 24px;
+      margin: 35px 0;
+      background: rgba(255, 255, 255, 0.4);
+      border-radius: 0 12px 12px 0;
+    }
+
+    /* Editorial Visual Break */
+    .visual-break {
+      position: relative;
+      height: 520px;
+      background-image: url('garden-walk.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 20px;
+    }
+
+    .visual-glass-quote {
+      max-width: 680px;
+      padding: 45px 50px;
+      background: rgba(56, 7, 21, 0.62);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      box-shadow: 0 25px 50px rgba(0,0,0,0.3);
+      border-radius: 20px;
+      text-align: center;
+    }
+
+    .visual-glass-quote h3 {
+      color: #FAF7F2;
+      font-size: 2.2rem;
+      margin-bottom: 15px;
+      line-height: 1.3;
+    }
+
+    .visual-glass-quote p {
+      color: #E6D9D4;
+      font-size: 1.05rem;
+      font-style: italic;
+      font-family: var(--font-serif);
+      margin-bottom: 0;
+    }
+
+    /* Curriculum Glass Cards */
+    .curriculum-section {
+      padding: 110px 0;
+    }
+
+    .curriculum-section h2 {
+      font-size: 2.6rem;
+      text-align: center;
+    }
+
+    .modules-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+      margin-top: 50px;
+    }
+
+    .module-item {
+      padding: 38px 34px;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.52);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.8);
+      box-shadow: var(--glass-shadow);
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .module-item:hover {
+      transform: translateY(-5px);
+      background: rgba(255, 255, 255, 0.75);
+      border-color: var(--gold-accent);
+      box-shadow: 0 25px 50px -10px rgba(56, 7, 21, 0.12);
+    }
+
+    .module-number {
+      font-family: var(--font-serif);
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--gold-accent);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 8px;
+    }
+
+    .module-title {
+      font-size: 1.4rem;
+      margin-bottom: 12px;
+      color: var(--burgundy-primary);
+    }
+
+    .module-desc {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-bottom: 0;
+    }
+
+    /* Checkout Frosted Glass Card */
+    .offer-glass-card {
+      padding: 60px 40px;
+      text-align: center;
+      margin: 90px 0 30px;
+      border: 1px solid var(--glass-border-gold);
+    }
+
+    .offer-cover-mini {
+      width: 140px;
+      margin: 0 auto 25px;
+      box-shadow: 0 15px 30px rgba(56, 7, 21, 0.2);
+      border-radius: 6px;
+    }
+
+    .instant-access-note {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-top: 20px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: var(--burgundy-dark);
+      color: #D3C4BA;
+      padding: 60px 0 35px;
+      text-align: center;
+      font-size: 0.85rem;
+      position: relative;
+      z-index: 10;
+    }
+
+    footer .brand-logo {
+      color: #FAF7F2;
+      margin-bottom: 15px;
+      display: inline-block;
+    }
+
+    footer a.contact-email {
+      color: var(--gold-accent);
+      text-decoration: underline;
+      letter-spacing: 0.5px;
+    }
+
+    .footer-copy {
+      margin-top: 35px;
+      padding-top: 25px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      font-size: 0.75rem;
+      color: #9C8D84;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .hero-grid { grid-template-columns: 1fr; text-align: center; }
+      .story-content-grid { grid-template-columns: 1fr; }
+      .story-glass-wrapper { padding: 30px 20px; }
+      .story-glass-frame img { height: 420px; }
+      .modules-grid { grid-template-columns: 1fr; }
+      .hero h1 { font-size: 2.7rem; }
+      .visual-glass-quote { padding: 30px 20px; }
+      .visual-glass-quote h3 { font-size: 1.7rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Ambient Light Orbs for Frosted Depth -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- Floating Frosted Navigation -->
+  <header>
+    <div class="nav-glass-bar">
+      <div class="brand-logo">The Leontelle Lady</div>
+      <a href="https://selar.com/3i18gy0706" class="nav-cta" target="_blank" rel="noopener">Acquire The Guide &rarr;</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        
+        <!-- Left: Book Cover on Frosted Glass Pedestal -->
+        <div class="book-glass-pedestal">
+          <img src="book-cover.jpg" alt="The Leontelle Lady Guide: A guide to executive femininity Book Cover">
+        </div>
+
+        <!-- Right: Headlines and Call to Action -->
+        <div class="hero-text">
+          <span class="hero-eyebrow">The Definitive Manual</span>
+          <h1>The Leontelle Lady Guide</h1>
+          <div class="subheading">A Guide to Executive Femininity</div>
+          
+          <div class="meta-tag">
+            <span>◆ 2-Hour Transformative Read</span>
+            <span>•</span>
+            <span>Instant Digital Access</span>
+          </div>
+
+          <p class="lead">
+            The codified masterwork for the woman who commands high-stakes rooms with effortless composure, unbreachable boundaries, and quiet magnetism—without ever over-explaining or raising her voice.
+          </p>
+
+          <a href="https://selar.com/3i18gy0706" class="btn-selar" target="_blank" rel="noopener">
+            Acquire on Selar
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Story Section: Camille's Transformation in Glass Container -->
+  <section class="story-section">
+    <div class="container">
+      <div class="glass-card story-glass-wrapper">
+        
+        <div class="story-header">
+          <h2>The Art of Personal Sovereignty</h2>
+          <div class="subheading">How Camille Stopped Shrinking in Grand Rooms and Owned Her Dignity</div>
+          <div class="divider"></div>
+        </div>
+
+        <div class="story-content-grid">
+          
+          <!-- Image 2: Opera Balcony in Frosted Glass Frame -->
+          <div class="story-glass-frame">
+            <img src="story-ballroom.jpg" alt="Woman in an elegant gown overlooking a grand opera hall">
+          </div>
+
+          <!-- Story Text -->
+          <div class="story-text">
+            <p>
+              <span class="dropcap">S</span>he stood beneath the towering gilded chandeliers of the Grand Palais, her silk gown falling like liquid marble. On paper, Camille had earned her seat at every distinguished table in the city. Yet beneath her serene exterior, she lived with an exhausting internal tension.
+            </p>
+
+            <p>
+              Whenever a senior executive or influential figure approached her, Camille found herself speaking too quickly, smiling to soften sharp truths, and offering unsolicited explanations for choices that required no defense. She was hyper-attuned to everyone else’s comfort while perpetually abandoning her own.
+            </p>
+
+            <div class="story-highlight">
+              "She had perfected the wardrobe of high society, but remained an utter novice in the sacred art of executive composure."
+            </div>
+
+            <p>
+              She returned home each night spiritually drained, dissecting her words in the mirror and wondering why—despite her intelligence and credentials—she felt invisible in high-calibre spaces. The modern slogans urging women to 'be aggressive' or adopt abrasive masculine hustle felt foreign and hollow to her.
+            </p>
+
+            <p>
+              Camille did not want noise; she wanted <strong>unshakable, sovereign gravitas</strong>.
+            </p>
+
+            <p>
+              Her entire posture shifted on a quiet Sunday afternoon when she immersed herself in <em>The Leontelle Lady Guide</em>. In just two hours of focused reading, the architecture of feminine power made sense.
+            </p>
+
+            <p>
+              She mastered the discipline of the deliberate pause. She dismantled the nervous tick of people-pleasing. She learned how to establish uncompromising boundaries with gentle warmth rather than defensive friction.
+            </p>
+
+            <p>
+              When Camille re-entered those grand halls months later, she did not raise her voice. She did not rush. And yet, the room leaned in. 
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Visual Break / Image 3 with Glass Quote -->
+  <section class="visual-break">
+    <div class="visual-glass-quote">
+      <h3>"True power never rushes. It commands through quiet presence."</h3>
+      <p>— The Leontelle Standard</p>
+    </div>
+  </section>
+
+  <!-- Curriculum / What's Inside The 2-Hour Guide -->
+  <section class="curriculum-section">
+    <div class="container">
+      <span class="hero-eyebrow" style="text-align: center;">Inside The Manual</span>
+      <h2>A 2-Hour Masterclass in Executive Femininity</h2>
+      <div class="subheading" style="text-align: center;">Concise. Tactical. Uncompromisingly elegant.</div>
+      <div class="divider"></div>
+
+      <div class="modules-grid">
+        <div class="module-item">
+          <div class="module-number">Part I</div>
+          <h3 class="module-title">The Sovereign Interior</h3>
+          <p class="module-desc">
+            Neutralizing performance anxiety, eliminating nervous laughter, and building emotional self-containment that commands instant respect.
+          </p>
+        </div>
+
+        <div class="module-item">
+          <div class="module-number">Part II</div>
+          <h3 class="module-title">Demeanour & Spatial Gravitas</h3>
+          <p class="module-desc">
+            The kinematics of poise: entering rooms, holding still eye contact, and cultivating an aura that communicates authority before you speak.
+          </p>
+        </div>
+
+        <div class="module-item">
+          <div class="module-number">Part III</div>
+          <h3 class="module-title">High-Calibre Articulation</h3>
+          <p class="module-desc">
+            The power of brevity. How to decline requests gracefully, negotiate without tension, and stop over-explaining your existence.
+          </p>
+        </div>
+
+        <div class="module-item">
+          <div class="module-number">Part IV</div>
+          <h3 class="module-title">The Rules of Executive Allure</h3>
+          <p class="module-desc">
+            Navigating private circles, cultivating romantic discernment, and maintaining high-value boundaries in an oversharing world.
+          </p>
+        </div>
+      </div>
+
+      <!-- Checkout / CTA Card with Glass Finish -->
+      <div class="narrow-contai
